@@ -1,0 +1,57 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model Ecommerce.UI.Models.DTO.ProductDto
+
+@{
+}
+
+@if (Model is not null)
+{
+    <div class="d-flex">
+        <div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    @foreach (var (productImage, index) in Model.ProductImages.Select((img, idx) => (img, idx)))
+                    {
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="@index"  aria-label="Slide @index" @(index == 0 ? "class=active" : "")></button>
+                    }
+                </div>
+                <div class="carousel-inner">
+                    @foreach (var (productImage, index) in Model.ProductImages.Select((img, idx) => (img, idx)))
+                    {
+                        <div class="carousel-item @(index == 0 ? "active" : "")">
+                            <img src="@productImage.FilePath" class="d-block w-100" alt="@productImage.FileName">
+                        </div>
+                    }
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div>
+            <div class="mt-3">
+                <span class="form-label"><b>Tên sản phẩm</b></span>
+                <p>@Model.ProductName</p>
+            </div>
+
+            <div class="mt-3">
+                <span><b>Đơn giá</b></span>
+                <p>@Model.UnitPrice</p>
+            </div>
+
+            <div class="mt-3">
+                <span><b>Danh mục</b></span>
+                <p>@Model.CategoryId</p>
+            </div>
+        </div>
+    </div>
+    
+}
