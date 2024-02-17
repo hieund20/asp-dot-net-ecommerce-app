@@ -43,6 +43,12 @@
                     </ul>
 
                     <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Cart" asp-action="Index">
+                                <i class="fa-regular fa-cart-shopping"></i>
+                                Giỏ hàng
+                            </a>
+                        </li>
                         @if (Context.Session.GetString("CurrentUserEmail") != null)
                         {
                             <li class="nav-item dropdown">

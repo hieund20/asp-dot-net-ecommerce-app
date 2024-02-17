@@ -1,0 +1,45 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model IEnumerable<Ecommerce.UI.Models.DTO.CartItemDto>
+
+
+@{
+}
+
+<h3>Giỏ hàng của bạn</h3>
+
+@if (Model != null && Model.Any())
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Mã sản phẩm</th>
+                <th>Tên sản phẩm</th>
+                <th>Giá</th>
+                <th>Số lượng</th>
+                <th>Tổng cộng</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.ItemId</td>
+                    <td>@item.ProductId</td>
+                    @* <td>@item.Price.ToString("C")</td> *@
+                    <td>@item.Quantity</td>
+                    @* <td>@(item.Price * item.Quantity).ToString("C")</td> *@
+                    @* <td><button class="btn btn-danger" @onclick="()=> RemoveFromCart(item.Id)">Xóa</button></td> *@
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Giỏ hàng của bạn trống.</p>
+}

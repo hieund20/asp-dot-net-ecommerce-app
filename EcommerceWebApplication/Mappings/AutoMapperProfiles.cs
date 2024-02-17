@@ -17,6 +17,8 @@ namespace Ecommerce.API.Mappings
             CreateMap<UpdateProductRequestDto, Product>().ReverseMap();
 
             CreateMap<ProductImage, ProductImageDto>().ReverseMap();
+
+            CreateMap<CartItem, CartItemDto>().ReverseMap();
         }
     }
 }

@@ -51,6 +51,15 @@
                 <span><b>Danh mục</b></span>
                 <p>@Model.CategoryId</p>
             </div>
+
+            <div class="mt-3">
+                <a type="button" class="btn btn-success" 
+                        asp-controller="Cart"
+                        asp-action="AddToCart"
+                        asp-route-ProductId="@Model.ProductId">
+                    Thêm vào giỏ hàng
+                </a>
+            </div>
         </div>
     </div>
     
