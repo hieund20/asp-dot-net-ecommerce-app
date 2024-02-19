@@ -1,5 +1,6 @@
 ﻿using Ecommerce.API.Data;
 using Ecommerce.API.Models.Domain;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace Ecommerce.API.Repositories
@@ -72,6 +73,11 @@ namespace Ecommerce.API.Repositories
         public async Task<Product?> GetByIdAsync(Guid id)
         {
             return await dBContext.Products.FirstOrDefaultAsync(x => x.ProductId == id);
+        }
+
+        public async Task<int> GetTotalAsync()
+        {
+            return await dBContext.Products.CountAsync();
         }
 
         public async Task<Product?> UpdateAsync(Guid id, Product product)

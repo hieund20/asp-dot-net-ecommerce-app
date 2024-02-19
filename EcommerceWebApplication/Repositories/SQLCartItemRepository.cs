@@ -69,7 +69,7 @@ namespace Ecommerce.API.Repositories
 
         public async Task<List<CartItem>> GetCartItemsAsync(Guid CartSessionId)
         {
-            return await dBContext.CartItems.Where(c => c.CartId == CartSessionId).ToListAsync();
+            return await dBContext.CartItems.Where(c => c.CartId == CartSessionId).Include(c => c.Product).ToListAsync();
         }
     }
 }

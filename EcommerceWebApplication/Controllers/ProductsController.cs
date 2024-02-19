@@ -34,6 +34,21 @@ namespace Ecommerce.API.Controllers
             return Ok(mapper.Map<List<ProductDto>>(productsDomainModel));
         }
 
+        [HttpGet]
+        [Route("Total")]
+        public async Task<IActionResult> GetTotal()
+        {
+            try
+            {
+                int totalProduct = await productRepository.GetTotalAsync();
+                return Ok(totalProduct);
+
+            } catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }    
+
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] AddProductRequestDto addProductRequest)
         {

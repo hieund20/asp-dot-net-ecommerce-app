@@ -17,12 +17,12 @@ namespace Ecommerce.Controllers
 
         public async Task<IActionResult> Index()
         {
+            var client = httpClientFactory.CreateClient();
+
             //Get Prouct List
             List<ProductDto> response = new List<ProductDto>();
             try
             {
-                var client = httpClientFactory.CreateClient();
-
                 var httpResponseMessage = await client.GetAsync("https://localhost:7168/api/products");
 
                 httpResponseMessage.EnsureSuccessStatusCode();
@@ -43,8 +43,6 @@ namespace Ecommerce.Controllers
                 {
                     List<ProductImageDto> productImageResponse = new List<ProductImageDto>();
 
-                    var client = httpClientFactory.CreateClient();
-
                     var httpResponseMessage = await client.GetAsync($"https://localhost:7168/api/ProductImages/{product.ProductId}");
 
                     httpResponseMessage.EnsureSuccessStatusCode();
@@ -61,7 +59,25 @@ namespace Ecommerce.Controllers
                 
             }
 
-            return View(finalResponse);
+            //Get Product Total Count
+            PaginationDto pagination = new PaginationDto();
+            try
+            {
+                var totalResponse = await client.GetFromJsonAsync<int>($"https://localhost:7168/api/Products/Total");
+                pagination.TotalPage = (int)Math.Ceiling((decimal)totalResponse / 10); 
+            }
+            catch (Exception ex)
+            {
+                
+            }
+
+            var viewData = new HomeShowProductViewModel<List<ProductDto>, PaginationDto>
+            {
+                ProductList = finalResponse,
+                Pagination = pagination
+            };
+
+            return View(viewData);
         }
 
         [HttpPost]

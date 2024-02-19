@@ -15,12 +15,11 @@
     <table class="table table-striped">
         <thead>
             <tr>
-                <th>#</th>
                 <th>Mã sản phẩm</th>
                 <th>Tên sản phẩm</th>
-                <th>Giá</th>
+                <th>Đơn giá</th>
                 <th>Số lượng</th>
-                <th>Tổng cộng</th>
+                <th>Tổng tiền</th>
                 <th></th>
             </tr>
         </thead>
@@ -28,12 +27,12 @@
             @foreach (var item in Model)
             {
                 <tr>
-                    <td>@item.ItemId</td>
                     <td>@item.ProductId</td>
-                    @* <td>@item.Price.ToString("C")</td> *@
+                    <td>@item.Product?.ProductName</td>
+                    <td>@item.Product?.UnitPrice</td>
                     <td>@item.Quantity</td>
-                    @* <td>@(item.Price * item.Quantity).ToString("C")</td> *@
-                    @* <td><button class="btn btn-danger" @onclick="()=> RemoveFromCart(item.Id)">Xóa</button></td> *@
+                    <td>@(item.Product?.UnitPrice * item.Quantity ?? 0)</td>
+                    <td><button class="btn btn-danger">Xóa</button></td>
                 </tr>
             }
         </tbody>

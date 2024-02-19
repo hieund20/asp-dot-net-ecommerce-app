@@ -1,4 +1,5 @@
 ﻿using Ecommerce.API.Models.Domain;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Ecommerce.API.Repositories
 {
@@ -14,5 +15,6 @@ namespace Ecommerce.API.Repositories
         Task<Product?> GetByIdAsync(Guid id);
         Task<Product?> UpdateAsync(Guid id, Product product);
         Task<Product?> DeleteAsync(Guid id);
+        Task<int> GetTotalAsync();
     }
 }
