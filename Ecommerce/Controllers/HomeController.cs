@@ -10,20 +10,44 @@ namespace Ecommerce.Controllers
     public class HomeController : Controller
     {
         private readonly IHttpClientFactory httpClientFactory;
+
         public HomeController(IHttpClientFactory httpClientFactory)
         {
             this.httpClientFactory = httpClientFactory;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1)
         {
             var client = httpClientFactory.CreateClient();
+
+            //Get Product Total Count
+            PaginationDto pagination = new PaginationDto();
+            try
+            {
+                var totalResponse = await client.GetFromJsonAsync<int>($"https://localhost:7168/api/Products/Total");
+                pagination.TotalPage = (int)Math.Ceiling((decimal)totalResponse / 10);
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+            //Set Current Page of Pagination
+            if (page == 0)
+            {
+                pagination.CurrentPage = 1;
+            }  
+            else if (page > pagination.TotalPage)
+            {
+                pagination.CurrentPage = pagination.TotalPage;
+            }    
+
 
             //Get Prouct List
             List<ProductDto> response = new List<ProductDto>();
             try
             {
-                var httpResponseMessage = await client.GetAsync("https://localhost:7168/api/products");
+                var httpResponseMessage = await client.GetAsync($"https://localhost:7168/api/products?pageNumber={pagination.CurrentPage}&pageSize=10");
 
                 httpResponseMessage.EnsureSuccessStatusCode();
 
@@ -56,18 +80,6 @@ namespace Ecommerce.Controllers
             }
             catch (Exception ex)
             { 
-                
-            }
-
-            //Get Product Total Count
-            PaginationDto pagination = new PaginationDto();
-            try
-            {
-                var totalResponse = await client.GetFromJsonAsync<int>($"https://localhost:7168/api/Products/Total");
-                pagination.TotalPage = (int)Math.Ceiling((decimal)totalResponse / 10); 
-            }
-            catch (Exception ex)
-            {
                 
             }
 

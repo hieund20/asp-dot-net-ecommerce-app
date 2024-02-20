@@ -72,7 +72,7 @@ namespace Ecommerce.API.Repositories
 
         public async Task<Product?> GetByIdAsync(Guid id)
         {
-            return await dBContext.Products.FirstOrDefaultAsync(x => x.ProductId == id);
+            return await dBContext.Products.Include(x => x.Category).FirstOrDefaultAsync(x => x.ProductId == id);
         }
 
         public async Task<int> GetTotalAsync()

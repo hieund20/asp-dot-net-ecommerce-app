@@ -63,13 +63,23 @@ namespace Ecommerce.API.Controllers
         }
 
         [HttpGet]
-        [Route("{id:Guid}")]
-        public async Task<IActionResult> GetProductImageById([FromRoute] Guid id)
+        [Route("{ProductId:Guid}")]
+        public async Task<IActionResult> GetProductImageListByProductId([FromRoute] Guid ProductId)
         {
-            var productImagesDomainModel = await productImageRepository.GetAllByProductIdAsync(id);
+            var productImagesDomainModel = await productImageRepository.GetAllByProductIdAsync(ProductId);
 
             // Map Domain Model to Dto
             return Ok(mapper.Map<List<ProductImageDto>>(productImagesDomainModel));
+        }
+
+        [HttpGet]
+        [Route("GetById/{id:Guid}")]
+        public async Task<IActionResult> GetProductImageById([FromRoute] Guid id)
+        {
+            var productImageDomainModel = await productImageRepository.GetByIdAsync(id);
+
+            // Map Domain Model to Dto
+            return Ok(mapper.Map<ProductImageDto>(productImageDomainModel));
         }
     }
 }

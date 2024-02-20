@@ -34,6 +34,11 @@ namespace Ecommerce.API.Repositories
             return result;
         }
 
+        public async Task<ProductImage> GetByIdAsync(Guid id)
+        {
+            return await dBContext.ProductImages.Include(x => x.Product).FirstOrDefaultAsync(x => x.Id == id);
+        }
+
         public async Task<ProductImage> Upload(ProductImage image)
         {
             var localFilePath = Path.Combine(webHostEnvironment.ContentRootPath, "Images", $"{image.FileName}{image.FileExtension}");
