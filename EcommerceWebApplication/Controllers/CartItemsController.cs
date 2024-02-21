@@ -48,5 +48,14 @@ namespace Ecommerce.API.Controllers
 
             return Ok(cartItemDomainModel);
         }
+
+        [HttpGet]
+        [Route("GetCartItemsCount/{CartSessionId:Guid}")]
+        public async Task<IActionResult> GetCartItemsCount([FromRoute] Guid CartSessionId)
+        {
+            int cartItemDomainModel = await cartItemRepository.GetCountAsync(CartSessionId);
+
+            return Ok(cartItemDomainModel);
+        }
     }
 }

@@ -20,3 +20,33 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+    /* Home */
+    .home {
+        flex-wrap: wrap;
+    }
+    .home .product {
+        width: 100% !important;
+    }
+
+    /* Product */
+    .product-detail {
+        display: block !important;
+    }
+
+    /* User */
+    .user-profile {
+        display: block !important;
+    }
+
+    .user-profile-avatar{
+        width: 100% !important;
+    }
+
+    .user-profile-information {
+        width: 100% !important;
+        margin-top: 16px;
+    }
+}

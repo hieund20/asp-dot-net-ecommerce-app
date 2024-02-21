@@ -82,5 +82,15 @@ namespace Ecommerce.API.Repositories
             total = sum ?? decimal.Zero;
             return total;
         }
+
+        public async Task<int> GetCountAsync(Guid CartSessionId)
+        {
+            // Get the count of each item in the cart and sum them up          
+            int? count = await ((from cartItems in dBContext.CartItems
+                          where cartItems.CartId == CartSessionId
+                                 select (int?)cartItems.Quantity)).SumAsync();
+            // Return 0 if all entries are null         
+            return count ?? 0;
+        }
     }
 }

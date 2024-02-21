@@ -78,11 +78,23 @@ namespace Ecommerce.UI.Controllers
             var response = await httpResponseMessage.Content.ReadFromJsonAsync<CartItemDto>();
 
             if (response is not null)
-            {
+            {                
                 return RedirectToAction("Index", "Cart");
             }
 
             return View("Index", "Cart");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetCartItemsCount()
+        {
+            var client = httpClientFactory.CreateClient();
+
+            string shoppingCartId = GetCartId();
+
+            int cartItemCount = await client.GetFromJsonAsync<int>($"https://localhost:7168/api/CartItems/GetCartItemsCount/{shoppingCartId}");
+
+            return Json(cartItemCount);
         }
 
         public string GetCartId()
@@ -100,8 +112,8 @@ namespace Ecommerce.UI.Controllers
                     HttpContext.Session.SetString(CartSessionKey, tempCartId.ToString());
                 }
             }
+
             return HttpContext.Session.GetString(CartSessionKey).ToString();
         }
-
     }
 }
