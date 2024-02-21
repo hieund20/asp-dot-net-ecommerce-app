@@ -32,6 +32,11 @@
             </div>
 
             <div class="mt-3">
+                <label class="form-label">Đường dẫn</label>
+                <input type="text" class="form-control" asp-for="FilePath" />
+            </div>
+
+            <div class="mt-3">
                 <label class="form-label">File hình ảnh</label>
                 <input type="file" class="form-control" asp-for="File" value="File" />
             </div>
@@ -39,7 +44,7 @@
 
         <div>
             <div class="mt-3" style="width: 500px; height: 500px">
-                <img src="@Model.FilePath" alt="@Model.FileName" style="width: 100%; object-fit: contain; height: 500px;">
+                <img src="@Model?.FilePath" alt="@Model?.FileName" style="width: 100%; object-fit: contain; height: 500px;">
             </div>
         </div>
     </div>
@@ -48,7 +53,7 @@
         <button type="submit" class="btn btn-secondary">Lưu</button>
 
         <button type="submit"
-                asp-controller="Products"
+                asp-controller="ProductImages"
                 asp-action="Delete"
                 class="btn btn-danger">
                 Xóa

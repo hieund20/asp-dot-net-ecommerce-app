@@ -39,5 +39,14 @@ namespace Ecommerce.API.Controllers
             //Map Domain Model to DTO
             return Ok(mapper.Map<CartItemDto>(cartItemDomainModel));
         }
+
+        [HttpGet]
+        [Route("GetCartItemsTotal/{CartSessionId:Guid}")]
+        public async Task<IActionResult> GetCartItemsTotal([FromRoute] Guid CartSessionId)
+        {
+            decimal cartItemDomainModel = await cartItemRepository.GetTotalAsync(CartSessionId);
+
+            return Ok(cartItemDomainModel);
+        }
     }
 }

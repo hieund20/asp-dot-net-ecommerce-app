@@ -81,5 +81,20 @@ namespace Ecommerce.API.Controllers
             // Map Domain Model to Dto
             return Ok(mapper.Map<ProductImageDto>(productImageDomainModel));
         }
+
+        [HttpDelete]
+        [Route("{id:Guid}")]
+        public async Task<IActionResult> Delete([FromRoute] Guid id)
+        {
+            var deleteProductImageDomainModel = await productImageRepository.DeleteAsync(id);
+
+            if (deleteProductImageDomainModel == null)
+            {
+                return NotFound();
+            }
+
+            //Map Domain Model to Dto
+            return Ok(mapper.Map<ProductImageDto>(deleteProductImageDomainModel));
+        }
     }
 }

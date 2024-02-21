@@ -3,6 +3,7 @@ using System.Text.Json;
 using System.Text;
 using Ecommerce.UI.Models.DTO;
 using System.Reflection;
+using Ecommerce.UI.Models;
 
 namespace Ecommerce.UI.Controllers
 {
@@ -19,14 +20,13 @@ namespace Ecommerce.UI.Controllers
 
         public async Task<IActionResult> Index()
         {
+            var client = httpClientFactory.CreateClient();
+            string shoppingCartId = GetCartId();
+
             List<CartItemDto> response = new List<CartItemDto>();
             try
             {
                 //Get All Regions from Web API
-                var client = httpClientFactory.CreateClient();
-
-                string shoppingCartId = GetCartId();
-
                 var httpResponseMessage = await client.GetAsync($"https://localhost:7168/api/CartItems/{shoppingCartId}");
 
                 httpResponseMessage.EnsureSuccessStatusCode();
@@ -39,7 +39,24 @@ namespace Ecommerce.UI.Controllers
 
             }
 
-            return View(response);
+            decimal total = 0;
+            try
+            {
+                //Get All Regions from Web API
+                total = await client.GetFromJsonAsync<decimal>($"https://localhost:7168/api/CartItems/GetCartItemsTotal/{shoppingCartId}");
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+            var viewData = new CartShowViewModel<List<CartItemDto>, decimal>
+            {
+                CartItemList = response,
+                TotalPrice = total
+            };
+
+            return View(viewData);
         }
 
         [HttpGet]
@@ -67,7 +84,6 @@ namespace Ecommerce.UI.Controllers
 
             return View("Index", "Cart");
         }
-
 
         public string GetCartId()
         {

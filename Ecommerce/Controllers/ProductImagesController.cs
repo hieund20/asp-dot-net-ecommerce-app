@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
 using System.Text;
 using Ecommerce.UI.Models.DTO;
+using System.Reflection;
 
 namespace Ecommerce.UI.Controllers
 {
@@ -114,6 +115,27 @@ namespace Ecommerce.UI.Controllers
             }
 
             return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Delete(ProductImageDto request)
+        {
+            try
+            {
+                var client = httpClientFactory.CreateClient();
+
+                var httpResponseMessage = await client.DeleteAsync($"https://localhost:7168/api/ProductImages/{request.Id}");
+                httpResponseMessage.EnsureSuccessStatusCode();
+
+                return RedirectToAction("Index", "ProductImages", new { ProductId = request.ProductId });
+
+            }
+            catch (Exception ex)
+            {
+                //Console
+            }
+
+            return View("Edit");
         }
     }
 }

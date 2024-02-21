@@ -71,5 +71,16 @@ namespace Ecommerce.API.Repositories
         {
             return await dBContext.CartItems.Where(c => c.CartId == CartSessionId).Include(c => c.Product).ToListAsync();
         }
+
+        public async Task<decimal> GetTotalAsync(Guid CartSessionId)
+        {
+            decimal total = decimal.Zero;
+            decimal? sum = await (from cartItems in dBContext.CartItems
+                                  where cartItems.CartId == CartSessionId
+                                  select (decimal?)(cartItems.Quantity * cartItems.Product.UnitPrice)).SumAsync();
+
+            total = sum ?? decimal.Zero;
+            return total;
+        }
     }
 }

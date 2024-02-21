@@ -7,5 +7,6 @@ namespace Ecommerce.API.Repositories
         Task<CartItem> AddToCartAsync(Guid ProductId, Guid CartSessionId);
         //Task<Guid> GetCartId();
         Task<List<CartItem>> GetCartItemsAsync(Guid CartSessionId);
+        Task<decimal> GetTotalAsync(Guid CartSessionId);
     }
 }

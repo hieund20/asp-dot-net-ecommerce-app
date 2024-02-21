@@ -17,6 +17,20 @@ namespace Ecommerce.API.Repositories
             this.dBContext = dBContext;
         }
 
+        public async Task<ProductImage?> DeleteAsync(Guid id)
+        {
+            var existingProductImage = await dBContext.ProductImages.FirstOrDefaultAsync(x => x.Id == id);
+
+            if (existingProductImage == null)
+            {
+                return null;
+            }
+
+            dBContext.ProductImages.Remove(existingProductImage);
+            await dBContext.SaveChangesAsync();
+            return existingProductImage;
+        }
+
         public async Task<List<ProductImage>> GetAllByProductIdAsync(Guid id)
         {
             var images = await dBContext.ProductImages.ToListAsync();

@@ -20,8 +20,8 @@
                 <div class="carousel-inner">
                     @foreach (var (productImage, index) in Model.ProductImages.Select((img, idx) => (img, idx)))
                     {
-                        <div class="carousel-item @(index == 0 ? "active" : "")">
-                            <img src="@productImage.FilePath" class="d-block w-100" alt="@productImage.FileName">
+                        <div class="carousel-item @(index == 0 ? "active" : "")" style="width: 500px; height: 500px;">
+                            <img src="@productImage.FilePath" class="d-block w-100" alt="@productImage.FileName" style="width: 100%; height: 500px; object-fit: contain;">
                         </div>
                     }
                 </div>
