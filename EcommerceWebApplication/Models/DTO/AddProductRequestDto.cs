@@ -8,6 +8,8 @@ namespace Ecommerce.API.Models.DTO
         public string ProductName { get; set; }
         [Required]
         public double UnitPrice { get; set; }
+        public string? Description { get; set; }
+
         [Required]
         public Guid CategoryId { get; set; }
     }

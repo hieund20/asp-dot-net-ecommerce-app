@@ -7,6 +7,7 @@
         public double UnitPrice { get; set; }
         public Guid CategoryId { get; set; }
         public string? ThumbnailImageUrl { get; set; }
+        public string? Description { get; set; }
         public ICollection<ProductImageDto>? ProductImages { get; set; }
 
         //Navigation propertiesz    

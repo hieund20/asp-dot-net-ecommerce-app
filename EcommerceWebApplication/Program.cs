@@ -30,6 +30,8 @@ builder.Services.AddScoped<IProductImageRepository, LocalProductImageRepository>
 builder.Services.AddScoped<ITokenRepository, TokenRepository>();
 builder.Services.AddScoped<IUserRepository, SQLUserRepository>();
 builder.Services.AddScoped<ICartItemRepository, SQLCartItemRepository>();
+builder.Services.AddScoped<ICommentRepository, SQLCommentRepository>();
+
 
 //Add AutoMapper
 builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));

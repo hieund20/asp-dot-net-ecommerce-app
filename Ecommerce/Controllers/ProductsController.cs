@@ -127,7 +127,7 @@ namespace Ecommerce.UI.Controllers
 
             if (response is not null)
             {
-                return RedirectToAction("Edit", "Products");
+                return RedirectToAction("Index", "Products");
             }
 
             return View();

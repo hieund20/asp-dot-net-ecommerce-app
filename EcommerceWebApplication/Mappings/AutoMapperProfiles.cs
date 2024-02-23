@@ -19,6 +19,10 @@ namespace Ecommerce.API.Mappings
             CreateMap<ProductImage, ProductImageDto>().ReverseMap();
 
             CreateMap<CartItem, CartItemDto>().ReverseMap();
+
+            CreateMap<Comment, CommentDto>().ReverseMap();
+            CreateMap<AddCommentRequestDto, Comment>().ReverseMap();
+            CreateMap<UpdateCommentRequestDto, Comment>().ReverseMap();
         }
     }
 }

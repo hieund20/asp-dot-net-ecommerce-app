@@ -92,6 +92,7 @@ namespace Ecommerce.API.Repositories
             existingProduct.ProductName = product.ProductName;
             existingProduct.UnitPrice = product.UnitPrice;
             existingProduct.CategoryId = product.CategoryId;
+            existingProduct.Description = product.Description;
 
             await dBContext.SaveChangesAsync();
 
