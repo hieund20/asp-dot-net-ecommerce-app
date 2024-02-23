@@ -25,7 +25,7 @@ namespace Ecommerce.API.Repositories
         {
             var existingCategory = await dBContext.Categories.FirstOrDefaultAsync(x => x.CategoryID == id);
 
-            if (existingCategory != null)
+            if (existingCategory == null)
             {
                 return null;
             }

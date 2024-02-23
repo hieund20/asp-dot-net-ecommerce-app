@@ -9,6 +9,7 @@ namespace Ecommerce.API.Models.DTO
         [Required]
         public double UnitPrice { get; set; }
         public string? Description { get; set; }
+        public DateTime CreatedDate { get; set; } = DateTime.Now;
 
         [Required]
         public Guid CategoryId { get; set; }

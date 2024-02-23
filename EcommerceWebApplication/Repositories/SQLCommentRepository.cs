@@ -1,5 +1,6 @@
 ﻿using Ecommerce.API.Data;
 using Ecommerce.API.Models.Domain;
+using Microsoft.EntityFrameworkCore;
 
 namespace Ecommerce.API.Repositories
 {
@@ -12,29 +13,52 @@ namespace Ecommerce.API.Repositories
             this.dBContext = dBContext;
         }
 
-        public Task<Comment> CreateAsync(Comment comment)
+        public async Task<Comment> CreateAsync(Comment comment)
         {
-            throw new NotImplementedException();
+            await dBContext.Comments.AddAsync(comment);
+            await dBContext.SaveChangesAsync();
+            return comment;
         }
 
-        public Task<Comment?> DeleteAsync(Guid id)
+        public async Task<Comment?> DeleteAsync(Guid id)
         {
-            throw new NotImplementedException();
+            var existingComment = await dBContext.Comments.FirstOrDefaultAsync(x => x.CommentId == id);
+
+            if (existingComment == null)
+            {
+                return null;
+            }
+
+            dBContext.Comments.Remove(existingComment);
+            await dBContext.SaveChangesAsync();
+            return existingComment;
         }
 
-        public Task<List<Comment>> GetAllAsync()
+        public async Task<List<Comment>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            var comments = await dBContext.Comments.ToListAsync();
+            return comments;
         }
 
-        public Task<Comment?> GetByIdAsync(Guid id)
+        public async Task<Comment?> GetByIdAsync(Guid id)
         {
-            throw new NotImplementedException();
+            return await dBContext.Comments.FirstOrDefaultAsync(x => x.CommentId == id);
         }
 
-        public Task<Comment?> UpdateAsync(Guid id, Comment comment)
+        public async Task<Comment?> UpdateAsync(Guid id, Comment comment)
         {
-            throw new NotImplementedException();
+            var existingComment = await dBContext.Comments.FirstOrDefaultAsync(x => x.CommentId == id);
+
+            if (existingComment == null)
+            {
+                return null;
+            }
+
+            existingComment.Content = comment.Content;
+
+            await dBContext.SaveChangesAsync();
+
+            return existingComment;
         }
     }
 }
