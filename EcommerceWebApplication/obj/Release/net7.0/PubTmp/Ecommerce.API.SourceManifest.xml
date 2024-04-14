@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="D:\.NET Ecomerce\EcommerceWebApplication\EcommerceWebApplication\obj\Release\net7.0\PubTmp\Out\" />
+  <dbfullsql path="D:\.NET Ecomerce\EcommerceWebApplication\EcommerceWebApplication\obj\Release\net7.0\PubTmp\EFSQLScripts\Ecommerce.API.Data.EcommerceAuthDBContext.sql" />
+  <dbfullsql path="D:\.NET Ecomerce\EcommerceWebApplication\EcommerceWebApplication\obj\Release\net7.0\PubTmp\EFSQLScripts\Ecommerce.API.Data.EcommerceDBContext.sql" />
+</sitemanifest>

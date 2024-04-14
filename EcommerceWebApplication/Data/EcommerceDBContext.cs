@@ -16,6 +16,13 @@ namespace Ecommerce.API.Data
         public DbSet<ProductImage> ProductImages { get; set; }
         public DbSet<CartItem> CartItems { get; set; }
         public DbSet<Comment> Comments { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<OrderDetail>()
+                .HasKey(od => new { od.OrderId, od.ProductId });
+        }
     }
 }

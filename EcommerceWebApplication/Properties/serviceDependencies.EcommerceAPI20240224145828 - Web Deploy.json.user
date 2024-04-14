@@ -1,0 +1,34 @@
+{
+  "dependencies": {
+    "apis1": {
+      "restored": true,
+      "restoreTime": "2024-02-24T08:01:54.8017731Z"
+    },
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2024-02-24T10:00:47.1152804Z"
+    }
+  },
+  "parameters": {
+    "mssql1.subscriptionId": {
+      "Name": "mssql1.subscriptionId",
+      "Type": "subscription",
+      "Value": "94665fc3-ace7-40ab-a162-2544cc5598b7"
+    },
+    "mssql1.resourceGroupName": {
+      "Name": "mssql1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "ecommerce-dev-east"
+    },
+    "apis1.resourceGroupName": {
+      "Name": "apis1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "ecommerce-dev-east"
+    },
+    "apis1.subscriptionId": {
+      "Name": "apis1.subscriptionId",
+      "Type": "subscription",
+      "Value": "94665fc3-ace7-40ab-a162-2544cc5598b7"
+    }
+  }
+}

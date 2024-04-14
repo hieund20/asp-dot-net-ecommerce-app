@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "apis1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ApiManagement/service/EcommerceAPIapi2024/apis/EcommerceAPI",
+      "type": "apis.azure"
+    },
+    "mssql1": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/EcommerceAPI20240224145828/providers/Microsoft.ServiceLinker/linkers/ConnectionStringsEcommerceDBContextStrin_419C96AA93",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/ecommercedb2024/databases/ecommerce2024",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:EcommerceDBContextString",
+      "dynamicId": null
+    }
+  }
+}

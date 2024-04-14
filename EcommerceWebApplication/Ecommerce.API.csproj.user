@@ -5,5 +5,6 @@
     <Controller_SelectedScaffolderID>ApiControllerEmptyScaffolder</Controller_SelectedScaffolderID>
     <Controller_SelectedScaffolderCategoryPath>root/Common/Api</Controller_SelectedScaffolderCategoryPath>
     <WebStackScaffolding_ControllerDialogWidth>650</WebStackScaffolding_ControllerDialogWidth>
+    <NameOfLastUsedPublishProfile>D:\.NET Ecomerce\EcommerceWebApplication\EcommerceWebApplication\Properties\PublishProfiles\EcommerceAPI20240224145828 - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

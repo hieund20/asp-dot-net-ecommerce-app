@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="EcommerceAPI20240224145828" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\\.NET\ Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\obj\\Release\\net7\.0\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="Ecommerce.API.Data.EcommerceAuthDBContext" description="" value="Data Source=ecommercedb2024.database.windows.net,1433;Initial Catalog=ecommerce2024;User ID=hieund200301;Password=!Duchieu200301" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^D:\\\.NET\ Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\obj\\Release\\net7\.0\\PubTmp\\EFSQLScripts\\Ecommerce\.API\.Data\.EcommerceAuthDBContext\.sql$" />
+  </parameter>
+  <parameter name="Ecommerce.API.Data.EcommerceDBContext" description="" value="Data Source=ecommercedb2024.database.windows.net,1433;Initial Catalog=ecommerce2024;User ID=hieund200301;Password=!Duchieu200301" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^D:\\\.NET\ Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\obj\\Release\\net7\.0\\PubTmp\\EFSQLScripts\\Ecommerce\.API\.Data\.EcommerceDBContext\.sql$" />
+  </parameter>
+</parameters>

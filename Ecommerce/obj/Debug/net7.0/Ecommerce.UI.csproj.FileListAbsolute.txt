@@ -28,3 +28,4 @@ D:\.NET Ecomerce\EcommerceWebApplication\Ecommerce\obj\Debug\net7.0\refint\Ecomm
 D:\.NET Ecomerce\EcommerceWebApplication\Ecommerce\obj\Debug\net7.0\Ecommerce.UI.pdb
 D:\.NET Ecomerce\EcommerceWebApplication\Ecommerce\obj\Debug\net7.0\Ecommerce.UI.genruntimeconfig.cache
 D:\.NET Ecomerce\EcommerceWebApplication\Ecommerce\obj\Debug\net7.0\ref\Ecommerce.UI.dll
+D:\.NET Ecomerce\EcommerceWebApplication\Ecommerce\obj\Debug\net7.0\Ecommerce.UI.sourcelink.json

@@ -25,7 +25,6 @@ D:\.NET Ecomerce\EcommerceWebApplication\EcommerceWebApplication\obj\Debug\net7.
 D:\.NET Ecomerce\EcommerceWebApplication\EcommerceWebApplication\obj\Debug\net7.0\staticwebassets.build.json
 D:\.NET Ecomerce\EcommerceWebApplication\EcommerceWebApplication\obj\Debug\net7.0\staticwebassets.development.json
 D:\.NET Ecomerce\EcommerceWebApplication\EcommerceWebApplication\obj\Debug\net7.0\scopedcss\bundle\Ecommerce.API.styles.css
-D:\.NET Ecomerce\EcommerceWebApplication\EcommerceWebApplication\obj\Debug\net7.0\Ecommerce.API.csproj.CopyComplete
 D:\.NET Ecomerce\EcommerceWebApplication\EcommerceWebApplication\obj\Debug\net7.0\Ecommerce.API.dll
 D:\.NET Ecomerce\EcommerceWebApplication\EcommerceWebApplication\obj\Debug\net7.0\refint\Ecommerce.API.dll
 D:\.NET Ecomerce\EcommerceWebApplication\EcommerceWebApplication\obj\Debug\net7.0\Ecommerce.API.pdb
@@ -261,3 +260,5 @@ D:\.NET Ecomerce\EcommerceWebApplication\EcommerceWebApplication\bin\Debug\net7.
 D:\.NET Ecomerce\EcommerceWebApplication\EcommerceWebApplication\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
 D:\.NET Ecomerce\EcommerceWebApplication\EcommerceWebApplication\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
 D:\.NET Ecomerce\EcommerceWebApplication\EcommerceWebApplication\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+D:\.NET Ecomerce\EcommerceWebApplication\EcommerceWebApplication\obj\Debug\net7.0\Ecommerce.API.sourcelink.json
+D:\.NET Ecomerce\EcommerceWebApplication\EcommerceWebApplication\obj\Debug\net7.0\Ecommerc.301F8E8C.Up2Date

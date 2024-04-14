@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4X9/fhwgIUajcvlcleVL/AAAAAACAAAAAAAQZgAAAAEAACAAAADJi6Wp3ZndJ/bhrGct7CKtL60mrNSNv+RnNaEARUEo7QAAAAAOgAAAAAIAACAAAAAzsuaFVWAO1y8irpJiJAm1zyeZg9tY0e73EiPeB3DWKqAAAAAnklS/CnRtwk4o5cTTBQ0QqHPoedMGOWuiEIO7A1KENS6drQJy8q9yxNgRwe+D8VtXwKhHjw+Bz96wOwSBeY61clht9RMrFqKb24clzZSrP0HOIefWae85BxPjKhw45EjFgONFuWA7O4D2pflbC4bRErfC/TMqdC7gN6XIEigxUEkRuBj4KzvwhikjcAtGpW+O+pWDtP0EbQ4Vt7XtEKGhQAAAABJ6negkPtjfYPdiwoHs/sYBHJ4yHX0EEBQxU+AOV6c6ZcMabuCugFwF0tbmhF8FFdcxqSIUlixprvY2uGW8kLE=</EncryptedPassword>
+    <History>True|2024-02-24T11:13:20.0667828Z;True|2024-02-24T17:18:20.5103316+07:00;True|2024-02-24T17:02:03.0093639+07:00;True|2024-02-24T15:05:48.5476186+07:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="EcommerceAuthDBContextString">
+      <Value>Data Source=ecommercedb2024.database.windows.net,1433%3bInitial Catalog=ecommerce2024%3bUser ID=hieund200301%3bPassword=!Duchieu200301</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="EcommerceDBContextString">
+      <Value>Data Source=ecommercedb2024.database.windows.net,1433%3bInitial Catalog=ecommerce2024%3bUser ID=hieund200301%3bPassword=!Duchieu200301</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="Ecommerce.API.Data.EcommerceAuthDBContext">
+      <Value>Data Source=ecommercedb2024.database.windows.net,1433%3bInitial Catalog=ecommerce2024%3bUser ID=hieund200301%3bPassword=!Duchieu200301</Value>
+    </EFMigrations>
+    <EFMigrations Include="Ecommerce.API.Data.EcommerceDBContext">
+      <Value>Data Source=ecommercedb2024.database.windows.net,1433%3bInitial Catalog=ecommerce2024%3bUser ID=hieund200301%3bPassword=!Duchieu200301</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
