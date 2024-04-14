@@ -3,6 +3,34 @@
   "WorkspaceRootPath": "D:\\.NET Ecomerce\\EcommerceWebApplication\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{81B2F8B2-3870-426F-9D64-97AB95E53455}|EcommerceWebApplication\\Ecommerce.API.csproj|d:\\.net ecomerce\\ecommercewebapplication\\ecommercewebapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81B2F8B2-3870-426F-9D64-97AB95E53455}|EcommerceWebApplication\\Ecommerce.API.csproj|solutionrelative:ecommercewebapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B2F8B2-3870-426F-9D64-97AB95E53455}|EcommerceWebApplication\\Ecommerce.API.csproj|d:\\.net ecomerce\\ecommercewebapplication\\ecommercewebapplication\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81B2F8B2-3870-426F-9D64-97AB95E53455}|EcommerceWebApplication\\Ecommerce.API.csproj|solutionrelative:ecommercewebapplication\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B2F8B2-3870-426F-9D64-97AB95E53455}|EcommerceWebApplication\\Ecommerce.API.csproj|d:\\.net ecomerce\\ecommercewebapplication\\ecommercewebapplication\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81B2F8B2-3870-426F-9D64-97AB95E53455}|EcommerceWebApplication\\Ecommerce.API.csproj|solutionrelative:ecommercewebapplication\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B2F8B2-3870-426F-9D64-97AB95E53455}|EcommerceWebApplication\\Ecommerce.API.csproj|d:\\.net ecomerce\\ecommercewebapplication\\ecommercewebapplication\\repositories\\sqlproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81B2F8B2-3870-426F-9D64-97AB95E53455}|EcommerceWebApplication\\Ecommerce.API.csproj|solutionrelative:ecommercewebapplication\\repositories\\sqlproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B2F8B2-3870-426F-9D64-97AB95E53455}|EcommerceWebApplication\\Ecommerce.API.csproj|d:\\.net ecomerce\\ecommercewebapplication\\ecommercewebapplication\\repositories\\sqlorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81B2F8B2-3870-426F-9D64-97AB95E53455}|EcommerceWebApplication\\Ecommerce.API.csproj|solutionrelative:ecommercewebapplication\\repositories\\sqlorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B2F8B2-3870-426F-9D64-97AB95E53455}|EcommerceWebApplication\\Ecommerce.API.csproj|d:\\.net ecomerce\\ecommercewebapplication\\ecommercewebapplication\\repositories\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81B2F8B2-3870-426F-9D64-97AB95E53455}|EcommerceWebApplication\\Ecommerce.API.csproj|solutionrelative:ecommercewebapplication\\repositories\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B2F8B2-3870-426F-9D64-97AB95E53455}|EcommerceWebApplication\\Ecommerce.API.csproj|d:\\.net ecomerce\\ecommercewebapplication\\ecommercewebapplication\\repositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81B2F8B2-3870-426F-9D64-97AB95E53455}|EcommerceWebApplication\\Ecommerce.API.csproj|solutionrelative:ecommercewebapplication\\repositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{81B2F8B2-3870-426F-9D64-97AB95E53455}|EcommerceWebApplication\\Ecommerce.API.csproj|d:\\.net ecomerce\\ecommercewebapplication\\ecommercewebapplication\\mappings\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81B2F8B2-3870-426F-9D64-97AB95E53455}|EcommerceWebApplication\\Ecommerce.API.csproj|solutionrelative:ecommercewebapplication\\mappings\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -83,6 +111,97 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\.NET Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\Program.cs",
+              "RelativeDocumentMoniker": "EcommerceWebApplication\\Program.cs",
+              "ToolTip": "D:\\.NET Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\Program.cs",
+              "RelativeToolTip": "EcommerceWebApplication\\Program.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACEAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T07:06:28.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SQLProductRepository.cs",
+              "DocumentMoniker": "D:\\.NET Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\Repositories\\SQLProductRepository.cs",
+              "RelativeDocumentMoniker": "EcommerceWebApplication\\Repositories\\SQLProductRepository.cs",
+              "ToolTip": "D:\\.NET Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\Repositories\\SQLProductRepository.cs",
+              "RelativeToolTip": "EcommerceWebApplication\\Repositories\\SQLProductRepository.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAmwGIAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T06:56:36.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SQLOrderRepository.cs",
+              "DocumentMoniker": "D:\\.NET Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\Repositories\\SQLOrderRepository.cs",
+              "RelativeDocumentMoniker": "EcommerceWebApplication\\Repositories\\SQLOrderRepository.cs",
+              "ToolTip": "D:\\.NET Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\Repositories\\SQLOrderRepository.cs",
+              "RelativeToolTip": "EcommerceWebApplication\\Repositories\\SQLOrderRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAF4AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T06:56:18.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "D:\\.NET Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\Repositories\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "EcommerceWebApplication\\Repositories\\IProductRepository.cs",
+              "ToolTip": "D:\\.NET Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\Repositories\\IProductRepository.cs",
+              "RelativeToolTip": "EcommerceWebApplication\\Repositories\\IProductRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T06:55:05.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IOrderRepository.cs",
+              "DocumentMoniker": "D:\\.NET Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\Repositories\\IOrderRepository.cs",
+              "RelativeDocumentMoniker": "EcommerceWebApplication\\Repositories\\IOrderRepository.cs",
+              "ToolTip": "D:\\.NET Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\Repositories\\IOrderRepository.cs",
+              "RelativeToolTip": "EcommerceWebApplication\\Repositories\\IOrderRepository.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T06:54:58.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\.NET Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "EcommerceWebApplication\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\.NET Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "EcommerceWebApplication\\Controllers\\ProductsController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwG0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T06:54:31.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\.NET Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "EcommerceWebApplication\\Controllers\\OrderController.cs",
+              "ToolTip": "D:\\.NET Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "EcommerceWebApplication\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAqwFwAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T06:53:50.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "AutoMapperProfiles.cs",
               "DocumentMoniker": "D:\\.NET Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\Mappings\\AutoMapperProfiles.cs",
               "RelativeDocumentMoniker": "EcommerceWebApplication\\Mappings\\AutoMapperProfiles.cs",
@@ -95,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "UpdateOrderRequestDto.cs",
               "DocumentMoniker": "D:\\.NET Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\Models\\DTO\\UpdateOrderRequestDto.cs",
               "RelativeDocumentMoniker": "EcommerceWebApplication\\Models\\DTO\\UpdateOrderRequestDto.cs",
@@ -108,7 +227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "UpdateProductRequestDto.cs",
               "DocumentMoniker": "D:\\.NET Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\Models\\DTO\\UpdateProductRequestDto.cs",
               "RelativeDocumentMoniker": "EcommerceWebApplication\\Models\\DTO\\UpdateProductRequestDto.cs",
@@ -121,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "AddProductRequestDto.cs",
               "DocumentMoniker": "D:\\.NET Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\Models\\DTO\\AddProductRequestDto.cs",
               "RelativeDocumentMoniker": "EcommerceWebApplication\\Models\\DTO\\AddProductRequestDto.cs",
@@ -134,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "AddOrderRequestDto.cs",
               "DocumentMoniker": "D:\\.NET Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\Models\\DTO\\AddOrderRequestDto.cs",
               "RelativeDocumentMoniker": "EcommerceWebApplication\\Models\\DTO\\AddOrderRequestDto.cs",
@@ -147,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "OrderDetailDto.cs",
               "DocumentMoniker": "D:\\.NET Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\Models\\DTO\\OrderDetailDto.cs",
               "RelativeDocumentMoniker": "EcommerceWebApplication\\Models\\DTO\\OrderDetailDto.cs",
@@ -160,7 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "ProductDto.cs",
               "DocumentMoniker": "D:\\.NET Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\Models\\DTO\\ProductDto.cs",
               "RelativeDocumentMoniker": "EcommerceWebApplication\\Models\\DTO\\ProductDto.cs",
@@ -173,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "OrderDto.cs",
               "DocumentMoniker": "D:\\.NET Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\Models\\DTO\\OrderDto.cs",
               "RelativeDocumentMoniker": "EcommerceWebApplication\\Models\\DTO\\OrderDto.cs",
@@ -186,7 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "CartItem.cs",
               "DocumentMoniker": "D:\\.NET Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\Models\\Domain\\CartItem.cs",
               "RelativeDocumentMoniker": "EcommerceWebApplication\\Models\\Domain\\CartItem.cs",
@@ -199,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "Category.cs",
               "DocumentMoniker": "D:\\.NET Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\Models\\Domain\\Category.cs",
               "RelativeDocumentMoniker": "EcommerceWebApplication\\Models\\Domain\\Category.cs",
@@ -211,7 +330,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "Image.cs",
               "DocumentMoniker": "D:\\.NET Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\Models\\Domain\\Image.cs",
               "RelativeDocumentMoniker": "EcommerceWebApplication\\Models\\Domain\\Image.cs",
@@ -224,7 +343,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 22,
               "Title": "ProductImage.cs",
               "DocumentMoniker": "D:\\.NET Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\Models\\Domain\\ProductImage.cs",
               "RelativeDocumentMoniker": "EcommerceWebApplication\\Models\\Domain\\ProductImage.cs",
@@ -236,7 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "OrderDetail.cs",
               "DocumentMoniker": "D:\\.NET Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\Models\\Domain\\OrderDetail.cs",
               "RelativeDocumentMoniker": "EcommerceWebApplication\\Models\\Domain\\OrderDetail.cs",
@@ -249,7 +368,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "Comment.cs",
               "DocumentMoniker": "D:\\.NET Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\Models\\Domain\\Comment.cs",
               "RelativeDocumentMoniker": "EcommerceWebApplication\\Models\\Domain\\Comment.cs",
@@ -262,7 +381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
               "Title": "Product.cs",
               "DocumentMoniker": "D:\\.NET Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\Models\\Domain\\Product.cs",
               "RelativeDocumentMoniker": "EcommerceWebApplication\\Models\\Domain\\Product.cs",
@@ -274,7 +393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "Order.cs",
               "DocumentMoniker": "D:\\.NET Ecomerce\\EcommerceWebApplication\\EcommerceWebApplication\\Models\\Domain\\Order.cs",
               "RelativeDocumentMoniker": "EcommerceWebApplication\\Models\\Domain\\Order.cs",
